@@ -33,9 +33,8 @@ app.post("/", function(req,res){
 res.redirect("/");    
 });
 
-
-app.listen(3000, function(){
-    console.log("Port is running at 3000");
-})
+app.listen(process.env.PORT||3000, function(){
+    console.log("server is running in port: 3000");
+});
 
 
